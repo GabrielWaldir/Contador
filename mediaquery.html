@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/index.css">
+    <title>Document</title>
+</head>
+<body>
+    <center><h1>Contador</h1>
+    <button onclick="Adicionar()">Adicionar</button>
+    <button onclick="Subitrair()">Subitrair</button>
+    <p id="conta"></p>
+    <img src="IMG/pingum.png"></center>
+    
+        <div class="imagem">
+
+        </div>
+
+    <script>
+        var conta = 0;
+        function Adicionar(){
+       conta++;
+       adicionarMais();
+        }
+        function Subitrair(){
+        conta--;
+        adicionarMais()
+        }
+        function adicionarMais(){
+     var contaElement = document.getElementById("conta");
+     contaElement.textContent = conta;
+        }
+        
+    </script>
+</body>
+</html>
